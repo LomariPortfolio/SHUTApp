@@ -1,0 +1,22 @@
+import { PrismaAdapter } from "@auth/prisma-adapter";
+import type { NextAuthOptions } from "next-auth";
+import GithubProvider from "next-auth/providers/github";
+import GoogleProvider from "next-auth/providers/google";
+import { prisma } from "./db";
+
+export const authOptions: NextAuthOptions = {
+  // @ts-ignore
+  adapter: PrismaAdapter(prisma),
+  providers: [
+    GithubProvider({
+      clientId: process.env.GITHUB_CLIENT_ID as string,
+      clientSecret: process.env.GITHUB_SECRET_ID as string,
+    }),
+    //TODO: Add Google Sign and Facebook too.
+    /**GoogleProvider({
+      *clientId: process.env.GOOGLE_CLIENT_ID,
+      *clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      *}),
+    */
+  ],
+};
