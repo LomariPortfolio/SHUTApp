@@ -41,6 +41,6 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 * [ ] Add Facebook sign-in option
 * [ ] Add Pinterest sign-in option
 * [ ] Add Discord sign-in option
-* [X] Implement an emoji picker
+* [X] ~~Implement an emoji picker~~
 * [ ] Add message reactions
 * [ ] Add Voice Messages
