@@ -20,7 +20,7 @@ async function getData(){
     orderBy: {
       createdAt: 'asc'
     },
-    take: 50
+    take: 1000
   })
 
   return data;
