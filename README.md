@@ -36,7 +36,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## TODO 👀️
 
 * [X] ~~Add Google sign-in option~~
-* [ ] Improve responsiveness for mobile and tablets
+* [X] ~~Improve responsiveness for mobile and tablets~~
 * [ ] Add Twitter sign-in option
 * [ ] Add Facebook sign-in option
 * [ ] Add Pinterest sign-in option
