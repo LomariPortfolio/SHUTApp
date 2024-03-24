@@ -77,6 +77,11 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
     },
+    screens: {
+
+      'mobile': {'max': '640px'},
+
+    }
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config

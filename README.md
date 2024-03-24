@@ -1,17 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is my chat application project called **SHUTApp!**.
+Tech Stack used:
 
-## Getting Started
+
+| Technology  | Link                                                               |
+| ------------- | -------------------------------------------------------------------- |
+| NextJS      | [Link](https://nextjs.org/)                                        |
+| Prisma      | [Link](https://www.prisma.io/)                                     |
+| Next-Auth   | [Link](https://next-auth.js.org/)                                  |
+| Supabase    | [Link](https://supabase.com/)                                      |
+| TailwindCSS | [Link](https://tailwindcss.com/)                                   |
+| ShadCN      | [Link](https://ui.shadcn.com/)                                     |
+| Bun         | [Link](https://bun.sh/)                                            |
+| Oxlint      | [Link](https://oxc-project.github.io/docs/guide/usage/linter.html) |
+
+## Getting Started 🚀️
 
 First, run the development server:
 
 ```bash
-npm run dev
+npm run dev #Add --turbo for faster development server performance
 # or
-yarn dev
+yarn dev #Add --turbo for faster development server performance
 # or
-pnpm dev
+pnpm dev #Add --turbo for faster development server performance
 # or
-bun dev
+bun dev #Add --turbo for faster development server performance
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -20,17 +33,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## TODO 👀️
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* [X] ~~Add Google sign-in option~~
+* [ ] Improve responsiveness for mobile and tablets
+* [ ] Add Twitter sign-in option
+* [ ] Add Facebook sign-in option
+* [ ] Add Pinterest sign-in option
+* [ ] Add Discord sign-in option
+* [ ] Implement an emoji picker
+* [ ] Add message reactions
+* [ ] Add Voice Messages

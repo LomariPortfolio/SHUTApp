@@ -73,4 +73,32 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .textarea-emoji-picker {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+  }
+  .emoji-mart {
+    position: absolute;
+    top: 33px;
+    right: 10px;
+  }
+  .emoji-trigger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    height: 20px;
+  }
+  .emoji-trigger path {
+    transition: 0.1s all;
+  }
+  .emoji-trigger:hover path {
+    fill: #000000;
+  }
+  .emoji-trigger.triggered path {
+    fill: darken(#FEC84A, 15%);
+  }
+
 }

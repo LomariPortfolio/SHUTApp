@@ -13,10 +13,16 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.GITHUB_SECRET_ID as string,
     }),
     //TODO: Add Google Sign and Facebook too.
-    /**GoogleProvider({
-      *clientId: process.env.GOOGLE_CLIENT_ID,
-      *clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      *}),
-    */
+    GoogleProvider({
+      clientId: process.env.GOOGLE_ID as string,
+      clientSecret: process.env.GOOGLE_SECRET as string,
+      authorization: {
+        params: {
+          prompt: "consent",
+          access_type: "offline",
+          response_type: "code"
+        }
+      }
+    })
   ],
 };
