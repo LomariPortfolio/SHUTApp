@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import { Logout, NavLogin } from "./Components/Buttons";
+import Navlist from "./Components/Navlist";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -49,15 +50,21 @@ export default async function RootLayout({
 
               {session ? (
                 <div className="flex items-center">
+                  <div className=" hidden mobile:block">
+                  <Navlist/>
+                  </div>
+                  <div className="flex justify-center items-center mobile:hidden">
+
                   <Image
                     src={session.user?.image as string}
                     alt="image"
                     className="w-12 h-12 rounded-full mr-3 border-background border-2"
                     width={50}
                     height={50}
-                  />
+                    />
                   <Logout />
                   <ModeToggle />
+                    </div>
                 </div>
               ) : (
                 <div className="flex items-center">

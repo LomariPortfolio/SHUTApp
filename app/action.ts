@@ -4,16 +4,15 @@ import { getServerSession } from "next-auth";
 import { prisma } from "./lib/db";
 import { authOptions } from "./lib/auth";
 
-export async function postData(formData: FormData) {
+export async function postData(message: string) {
   "use server";
   const Pusher = require("pusher");
 
   const session = await getServerSession(authOptions);
-  const message = formData.get("message");
 
   const data = await prisma.message.create({
     data: {
-      message: message as string,
+      message: message,
       email: session?.user?.email,
     },
     include: {
